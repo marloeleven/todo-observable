@@ -1,0 +1,7 @@
+.addTodo {
+  width: 300px;
+}
+
+.addTodo button {
+  white-space: nowrap;
+}
