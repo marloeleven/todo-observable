@@ -1,17 +1,17 @@
-import React, { useRef, useCallback, useState, useEffect } from "react";
-import uuid from "uuid/v4";
+import React, { useRef, useCallback, useState, useEffect } from 'react';
+import uuid from 'uuid/v4';
 
-import Flex from "components/Flex";
-import Form from "components/Form";
-import Input from "components/Input";
-import Button from "components/Button";
-import TodoList from "containers/TodoList";
+import Flex from 'components/Flex';
+import Form from 'components/Form';
+import Input from 'components/Input';
+import Button from 'components/Button';
+import TodoList from 'containers/TodoList';
 
-import Storage from "utils/localStorage";
+import Storage from 'utils/localStorage';
 
-import styles from "./App.module.css";
+import styles from './App.module.css';
 
-const todosStorage = Storage("todos");
+const todosStorage = Storage('todos');
 
 function App() {
   const inputRef = useRef();
@@ -29,7 +29,7 @@ function App() {
         }
       ]);
 
-      inputRef.current.value = "";
+      inputRef.current.value = '';
     }
   }, []);
 
